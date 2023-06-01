@@ -113,10 +113,9 @@
     <script src="bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/jquery-3.7.0.min.js"></script>
     <script src="assets/scripts/app.js"></script>
-    <script>
-        let s = document.querySelector('#name');
-        s.parentNode
-        // console.log(s);
+
+    <script >
+        
         $(document).ready(function () {
             const list = []
             const name = $('#name')[0]
@@ -206,7 +205,6 @@
                     $(tr).find('.email').text(prompt('email',item.email));
                     $(tr).find('.phone').text(prompt('phone',item.phone));
                 });
-                console.log(tr);
                 return tr;
             }
         });
